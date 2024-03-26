@@ -1,8 +1,11 @@
 import PageNotFoundImage from '../assets/images/pagenotfound.png';
 import { Link } from 'react-router-dom';
 import { Button } from '../components';
+import { useTitle } from '../hooks/useTitle';
 
 export const PageNotFound = () => {
+  
+  useTitle('404');
   return (
     <main>
       <section className="flex flex-col justify-center px-2">
